@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Помочь приюту - Верные лапки</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Верные лапки">
+                <h1>Верные лапки</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="animals.html">Наши жители</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                    <li><a href="#" class="active">Помочь приюту</a></li>
+                    <li><a href="adopt.html">Забрать питомца</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section" style="background: linear-gradient(rgba(76, 175, 80, 0.9), rgba(76, 175, 80, 0.8)), url('../images/donate-hero.jpg') center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-item">Поддержать приют</h1>
+                <p class="subtitle animate-item delay-1">Ваша помощь даёт животным шанс на лучшую жизнь</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="donation-options">
+        <div class="container">
+            <h2 class="section-title animate-item">Способы помочь</h2>
+            
+            <div class="grid donation-cards" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Финансовая помощь -->
+                <div class="card donation-card animate-item">
+                    <div class="donation-icon"><i class="fas fa-donate"></i></div>
+                    <h3>Финансовая помощь</h3>
+                    <p>Пожертвуйте любую сумму на содержание животных</p>
+                    
+                    <div class="amount-buttons flex-row">
+                        <button class="btn small amount-btn" data-amount="500">500₽</button>
+                        <button class="btn small amount-btn" data-amount="1000">1000₽</button>
+                        <button class="btn small amount-btn" data-amount="2000">2000₽</button>
+                    </div>
+                    
+                    <form class="donation-form">
+                        <div class="form-group">
+                            <label for="custom-amount">Или введите свою сумму:</label>
+                            <input type="number" id="custom-amount" name="amount" min="100" step="100" placeholder="Сумма в рублях">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="donor-name">Ваше имя (по желанию):</label>
+                            <input type="text" id="donor-name" name="name" placeholder="Как к вам обращаться">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="donor-email">Email для квитанции:</label>
+                            <input type="email" id="donor-email" name="email" required placeholder="example@mail.com">
+                        </div>
+                        
+                        <button type="submit" class="btn">Пожертвовать <i class="fas fa-heart"></i></button>
+                    </form>
+                </div>
+
+                <!-- Материальная помощь -->
+                <div class="card donation-card animate-item delay-1">
+                    <div class="donation-icon"><i class="fas fa-shopping-basket"></i></div>
+                    <h3>Вещи и корма</h3>
+                    <p>Мы всегда рады следующим вещам:</p>
+                    
+                    <ul class="needs-list">
+                        <li><i class="fas fa-paw"></i> Сухие и влажные корма для кошек и собак</li>
+                        <li><i class="fas fa-paw"></i> Наполнители для кошачьих туалетов</li>
+                        <li><i class="fas fa-paw"></i> Ошейники, поводки, шлейки</li>
+                        <li><i class="fas fa-paw"></i> Лекарства и средства по уходу</li>
+                        <li><i class="fas fa-paw"></i> Игрушки, лежанки, переноски</li>
+                        <li><i class="fas fa-paw"></i> Одноразовые пеленки</li>
+                    </ul>
+                    
+                    <div class="card-footer">
+                        <p>Вы можете привезти вещи лично или заказать доставку в наш приют</p>
+                        <a href="#contacts" class="btn secondary">Контакты для доставки <i class="fas fa-map-marker-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Волонтерство -->
+                <div class="card donation-card animate-item delay-2">
+                    <div class="donation-icon"><i class="fas fa-hands-helping"></i></div>
+                    <h3>Волонтерская помощь</h3>
+                    <p>Подарите животным своё время и заботу</p>
+                    
+                    <ul class="volunteer-list">
+                        <li><i class="fas fa-dog"></i> Выгул собак</li>
+                        <li><i class="fas fa-cat"></i> Уход за животными</li>
+                        <li><i class="fas fa-calendar-alt"></i> Помощь на мероприятиях</li>
+                        <li><i class="fas fa-car"></i> Транспортировка животных</li>
+                        <li><i class="fas fa-camera"></i> Фотосъемка для карточек</li>
+                        <li><i class="fas fa-share-alt"></i> Помощь в соцсетях</li>
+                    </ul>
+                    
+                    <div class="card-footer">
+                        <a href="promotions.html" class="btn secondary">Узнать о волонтерских акциях <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact-section">
+        <div class="container">
+            <h2 class="section-title animate-item">Как ваша помощь меняет жизни</h2>
+            
+            <div class="grid impact-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <div class="impact-card animate-item">
+                    <div class="impact-number highlight-amount">500 ₽</div>
+                    <p>Обеспечивают кормом одну собаку на неделю</p>
+                    <div class="impact-icon"><i class="fas fa-dog"></i></div>
+                </div>
+                
+                <div class="impact-card animate-item delay-1">
+                    <div class="impact-number highlight-amount">1 500 ₽</div>
+                    <p>Покрывают стоимость прививки для одного животного</p>
+                    <div class="impact-icon"><i class="fas fa-syringe"></i></div>
+                </div>
+                
+                <div class="impact-card animate-item delay-2">
+                    <div class="impact-number highlight-amount">3 000 ₽</div>
+                    <p>Позволяют провести полный осмотр у ветеринара</p>
+                    <div class="impact-icon"><i class="fas fa-stethoscope"></i></div>
+                </div>
+                
+                <div class="impact-card animate-item delay-3">
+                    <div class="impact-number highlight-amount">10 000 ₽</div>
+                    <p>Спасают жизнь животному при сложном лечении</p>
+                    <div class="impact-icon"><i class="fas fa-heartbeat"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="success-stories">
+        <div class="container" style="max-width: 900px;">
+            <h2 class="section-title animate-item">Истории спасённых жизней</h2>
+            
+            <div class="grid stories-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                <div class="card story-card animate-item" style="display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="../images/rescue1.jpg" alt="Спасённый пёс" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="story-content" style="padding: 15px; flex: 1; display: flex; flex-direction: column;">
+                        <h3>Белка</h3>
+                        <p style="flex: 1;">Была найдена в тяжёлом состоянии, теперь здорова и живёт в любящей семье</p>
+                        <div class="story-meta"><span class="highlight-amount">Пожертвовано: 25 000₽</span></div>
+                    </div>
+                </div>
+                
+                <div class="card story-card animate-item delay-1" style="display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="../images/rescue2.jpg" alt="Спасённая кошка" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="story-content" style="padding: 15px; flex: 1; display: flex; flex-direction: column;">
+                        <h3>Эллис</h3>
+                        <p style="flex: 1;">Вылечена от тяжёлой болезни благодаря вашим пожертвованиям</p>
+                        <div class="story-meta"><span class="highlight-amount">Пожертвовано: 15 000₽</span></div>
+                    </div>
+                </div>
+                
+                <div class="card story-card animate-item delay-2" style="display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="../images/rescue3.jpg" alt="Спасённые котята" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="story-content" style="padding: 15px; flex: 1; display: flex; flex-direction: column;">
+                        <h3>Котята из подвала</h3>
+                        <p style="flex: 1;">Семеро котят были спасены и все нашли новые дома</p>
+                        <div class="story-meta"><span class="highlight-amount">Пожертвовано: 30 000₽</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts-section" id="contacts">
+        <div class="container">
+            <div class="card contact-card animate-item " style="padding: 20px;">
+                <h2 class="section-title">Контакты для помощи</h2>
+                
+                <div class="grid contact-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                    <div class="contact-info">
+                        <h3><i class="fas fa-map-marker-alt"></i> Адрес приюта</h3>
+                        <div class="copy-field">
+                            <input type="text" value="г. Красноярск, ул. Добрых Сердец, 15" readonly>
+                            <button class="copy-btn" data-text="г. Красноярск, ул. Добрых Сердец, 15"><i class="far fa-copy"></i></button>
+                        </div>
+                        <p>Вход со стороны парковки</p>
+                        
+                        <h3><i class="far fa-clock"></i> Часы приёма помощи</h3>
+                        <p>Пн-Пт: 10:00 - 18:00</p>
+                        <p>Сб-Вс: 11:00 - 16:00</p>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3><i class="fas fa-user-tie"></i> Координатор помощи</h3>
+                        <p>Мария Иванова</p>
+                        <div class="copy-field">
+                            <input type="text" value="+7 (495) 123-45-67 (доб. 12)" readonly>
+                            <button class="copy-btn" data-text="+7 (495) 123-45-67 (доб. 12)"><i class="far fa-copy"></i></button>
+                        </div>
+                        <div class="copy-field">
+                            <input type="text" value="help@vernye-lapki.ru" readonly>
+                            <button class="copy-btn" data-text="help@vernye-lapki.ru"><i class="far fa-copy"></i></button>
+                        </div>
+                        
+                        <h3><i class="fas fa-money-bill-wave"></i> Реквизиты для переводов</h3>
+                        <div class="copy-field">
+                            <input type="text" value="Благотворительный фонд 'Верные лапки'" readonly>
+                            <button class="copy-btn" data-text="Благотворительный фонд 'Верные лапки'"><i class="far fa-copy"></i></button>
+                        </div>
+                        <div class="copy-field">
+                            <input type="text" value="ИНН 1234567890, КПП 123456789" readonly>
+                            <button class="copy-btn" data-text="ИНН 1234567890, КПП 123456789"><i class="far fa-copy"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-reqs">
+                    <button id="downloadReqs" class="btn secondary">
+                        <i class="fas fa-file-word"></i> Скачать реквизиты (Word)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Верные лапки</h3>
+                    <p>Приют для кошек и собак</p>
+                    <p>"От сердца к сердцу через верные лапки"</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>г. Красноярск, ул. Добрых Сердец, 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@vernye-lapki.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Часы работы</h3>
+                    <p>Пн-Пт: 10:00 - 19:00</p>
+                    <p>Сб-Вс: 10:00 - 17:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Приют "Верные лапки". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Обработка кнопок выбора суммы
+        document.addEventListener('DOMContentLoaded', function() {
+            const amountButtons = document.querySelectorAll('.amount-btn');
+            const customAmount = document.getElementById('custom-amount');
+            
+            amountButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const amount = this.getAttribute('data-amount');
+                    customAmount.value = amount;
+                    
+                    // Сбрасываем активное состояние у всех кнопок
+                    amountButtons.forEach(btn => btn.classList.remove('active'));
+                    // Добавляем активное состояние текущей кнопке
+                    this.classList.add('active');
+                });
+            });
+            
+            // Обработка копирования реквизитов
+            const copyButtons = document.querySelectorAll('.copy-btn');
+            copyButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const text = this.getAttribute('data-text');
+                    navigator.clipboard.writeText(text).then(() => {
+                        const icon = this.querySelector('i');
+                        icon.classList.remove('fa-copy');
+                        icon.classList.add('fa-check');
+                        
+                        setTimeout(() => {
+                            icon.classList.remove('fa-check');
+                            icon.classList.add('fa-copy');
+                        }, 2000);
+                    });
+                });
+            });
+            
+            // Генерация и скачивание Word документа с реквизитами
+            document.getElementById('downloadReqs').addEventListener('click', function() {
+                const content = `
+                    <h1>Реквизиты для помощи приюту "Верные лапки"</h1>
+                    <h2>Контакты</h2>
+                    <p><strong>Адрес:</strong> г. Красноярск, ул. Добрых Сердец, 15</p>
+                    <p><strong>Координатор помощи:</strong> Мария Иванова</p>
+                    <p><strong>Телефон:</strong> +7 (495) 123-45-67 (доб. 12)</p>
+                    <p><strong>Email:</strong> help@vernye-lapki.ru</p>
+                    
+                    <h2>Банковские реквизиты</h2>
+                    <p><strong>Получатель:</strong> Благотворительный фонд "Верные лапки"</p>
+                    <p><strong>ИНН:</strong> 1234567890</p>
+                    <p><strong>КПП:</strong> 123456789</p>
+                    <p><strong>Банк:</strong> ПАО "Сбербанк"</p>
+                    <p><strong>БИК:</strong> 044525225</p>
+                    <p><strong>Корр. счет:</strong> 30101810400000000225</p>
+                    <p><strong>Расчетный счет:</strong> 40703810238000001234</p>
+                    
+                    <p>Назначение платежа: <em>Благотворительное пожертвование на уставную деятельность</em></p>
+                `;
+                
+                // Создаем Blob с HTML содержимым
+                const blob = new Blob([content], { type: 'application/msword' });
+                const url = URL.createObjectURL(blob);
+                
+                // Создаем ссылку для скачивания
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'Реквизиты_Верные_лапки.doc';
+                document.body.appendChild(a);
+                a.click();
+                
+                // Очищаем
+                setTimeout(() => {
+                    document.body.removeChild(a);
+                    window.URL.revokeObjectURL(url);
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>

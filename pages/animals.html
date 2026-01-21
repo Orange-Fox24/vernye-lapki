@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши жители - Верные лапки</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Верные лапки">
+                <h1>Верные лапки</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="#" class="active">Наши жители</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                    <li><a href="donations.html">Помочь приюту</a></li>
+                    <li><a href="adopt.html">Забрать питомца</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section" style="background: linear-gradient(rgba(76, 175, 80, 0.9), rgba(76, 175, 80, 0.8)), url('../images/animals-hero.jpg') center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-item">Наши пушистые жители</h1>
+                <p class="subtitle animate-item delay-1">Каждое из этих животных мечтает найти любящую семью</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="animal-filters">
+        <div class="container">
+            <div class="filter-buttons flex-row justify-center">
+                <button class="btn small active animate-item" data-filter="all">Все питомцы</button>
+                <button class="btn small animate-item delay-1" data-filter="cat">Кошки</button>
+                <button class="btn small animate-item delay-2" data-filter="dog">Собаки</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="animals-grid-section">
+        <div class="container">
+            <div class="grid animals-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+                <!-- Кошка Маркиза -->
+                <div class="card animal-card animate-item" data-category="cat" id="markiza">
+                    <div class="card-image">
+                        <img src="../images/cat1.jpg" alt="Маркиза">
+                        <div class="card-badge">Мурлыка</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Маркиза</h3>
+                        <div class="animal-meta flex-row">
+                            <span>3 года</span>
+                            <span>Самка</span>
+                            <span>Кошка</span>
+                        </div>
+                        <p class="animal-description">Спокойная и ласковая кошечка, обожает внимание и мурлыканье. Идеально подходит для семей с детьми.</p>
+                        <div class="card-footer">
+                            <a href="adopt.html" class="btn small">Забрать домой</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Пес Барни -->
+                <div class="card animal-card animate-item " data-category="dog" id="barni">
+                    <div class="card-image">
+                        <img src="../images/dog1.jpg" alt="Барни">
+                        <div class="card-badge">Активный</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Барни</h3>
+                        <div class="animal-meta flex-row">
+                            <span>2 года</span>
+                            <span>Самец</span>
+                            <span>Собака</span>
+                        </div>
+                        <p class="animal-description">Энергичный и дружелюбный пес, обожает игры и прогулки. Нуждается в активном хозяине.</p>
+                        <div class="card-footer">
+                            <a href="adopt.html" class="btn small">Забрать домой</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Кот Сэм -->
+                <div class="card animal-card animate-item " data-category="cat" id="sem">
+                    <div class="card-image">
+                        <img src="../images/cat2.jpg" alt="Сэм">
+                        <div class="card-badge">Спокойный</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Сэм</h3>
+                        <div class="animal-meta flex-row">
+                            <span>5 лет</span>
+                            <span>Самец</span>
+                            <span>Кот</span>
+                        </div>
+                        <p class="animal-description">Взрослый мудрый кот, ценит независимость, но проявляет ласку, когда сам этого захочет.</p>
+                        <div class="card-footer">
+                            <a href="adopt.html" class="btn small">Забрать домой</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Собака Лайма -->
+                <div class="card animal-card animate-item " data-category="dog" id="laima">
+                    <div class="card-image">
+                        <img src="../images/dog2.jpg" alt="Лайма">
+                        <div class="card-badge">Умная</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Лайма</h3>
+                        <div class="animal-meta flex-row">
+                            <span>1 год</span>
+                            <span>Самка</span>
+                            <span>Собака</span>
+                        </div>
+                        <p class="animal-description">Очень сообразительная, быстро обучается. Идеальна для занятий спортом или дрессировки.</p>
+                        <div class="card-footer">
+                            <a href="adopt.html" class="btn small">Забрать домой</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кошка Мурка -->
+                <div class="card animal-card animate-item " data-category="cat" id="murka">
+                    <div class="card-image">
+                        <img src="../images/cat3.jpg" alt="Мурка">
+                        <div class="card-badge">Милая</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Мурка</h3>
+                        <div class="animal-meta flex-row">
+                            <span>2 месяца</span>
+                            <span>Самка</span>
+                            <span>Кошка</span>
+                        </div>
+                        <p class="animal-description">Ласковая и игривая, всегда в поисках приключений.</p>
+                        <div class="card-footer">
+                            <a href="adopt.html" class="btn small">Забрать домой</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Собака Рекс -->
+                <div class="card animal-card animate-item " data-category="dog" id="rekc">
+                    <div class="card-image">
+                        <img src="../images/dog3.jpg" alt="Рекс">
+                        <div class="card-badge">Хороший друг</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Рекс</h3>
+                        <div class="animal-meta flex-row">
+                            <span>8 месяцев</span>
+                            <span>Самец</span>
+                            <span>Собака</span>
+                        </div>
+                        <p class="animal-description">Верный и преданный, отличный друг для всей семьи.</p>
+                        <div class="card-footer">
+                            <a href="adopt.html" class="btn small">Забрать домой</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кошка Муна -->
+                <div class="card animal-card animate-item " data-category="cat" id="muna">
+                    <div class="card-image">
+                        <img src="../images/cat4.jpg" alt="Муна">
+                        <div class="card-badge">Красавица</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Муна</h3>
+                        <div class="animal-meta flex-row">
+                            <span>5 лет</span>
+                            <span>Самка</span>
+                            <span>Кошка</span>
+                        </div>
+                        <p class="animal-description">Нежная подружка, греет душу теплом своим.</p>
+                        <div class="card-footer">
+                            <a href="adopt.html" class="btn small">Забрать домой</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Собака Лапка -->
+                <div class="card animal-card animate-item " data-category="dog" id="lapka">
+                    <div class="card-image">
+                        <img src="../images/dog4.jpg" alt="Лапка">
+                        <div class="card-badge">Дружная</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Лапка</h3>
+                        <div class="animal-meta flex-row">
+                            <span>10 месяцев</span>
+                            <span>Самка</span>
+                            <span>Собака</span>
+                        </div>
+                        <p class="animal-description">Луший друг семьи, хранит любовь и верность свято.</p>
+                        <div class="card-footer">
+                            <a href="adopt.html" class="btn small">Забрать домой</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кот Котлетка -->
+                <div class="card animal-card animate-item " data-category="cat" id="kotletka">
+                    <div class="card-image">
+                        <img src="../images/cat5.jpg" alt="Котлетка">
+                        <div class="card-badge">Пухлый</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Котлетка</h3>
+                        <div class="animal-meta flex-row">
+                            <span>3 лет</span>
+                            <span>Самец</span>
+                            <span>Кот</span>
+                        </div>
+                        <p class="animal-description">Забавный проказник, дарит радость и уют.</p>
+                        <div class="card-footer">
+                            <a href="adopt.html" class="btn small">Забрать домой</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="adoption-process">
+        <div class="container">
+            <h2 class="section-title">Как забрать питомца</h2>
+            <div class="timeline">
+                <div class="timeline-item animate-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Знакомство</h3>
+                        <p>Посетите приют и познакомьтесь с животными. Наши сотрудники помогут вам выбрать подходящего питомца.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-item delay-1">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Анкета</h3>
+                        <p>Заполните анкету будущего хозяина. Это поможет нам убедиться, что животное попадет в хорошие руки.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-item delay-2">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Собеседование</h3>
+                        <p>Наш специалист проведет с вами беседу, ответит на все вопросы и даст рекомендации по уходу.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-item delay-3">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>Договор</h3>
+                        <p>Мы заключаем договор о передаче животного, где прописаны условия и наши обязательства.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-item delay-4">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-content">
+                        <h3>Переезд</h3>
+                        <p>Вы получите памятку по уходу и список необходимых вещей. Мы поможем с транспортировкой.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-item delay-5">
+                    <div class="timeline-number">6</div>
+                    <div class="timeline-content">
+                        <h3>Адаптация</h3>
+                        <p>Мы остаемся на связи и помогаем в период адаптации животного в новом доме.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Верные лапки</h3>
+                    <p>Приют для кошек и собак</p>
+                    <p>"От сердца к сердцу через верные лапки"</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>г. Красноярск, ул. Добрых Сердец, 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@vernye-lapki.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Часы работы</h3>
+                    <p>Пн-Пт: 10:00 - 19:00</p>
+                    <p>Сб-Вс: 10:00 - 17:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Приют "Верные лапки". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

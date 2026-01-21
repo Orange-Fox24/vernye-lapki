@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акции - Верные лапки</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Верные лапки">
+                <h1>Верные лапки</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="animals.html">Наши жители</a></li>
+                    <li><a href="#" class="active">Акции</a></li>
+                    <li><a href="donations.html">Помочь приюту</a></li>
+                    <li><a href="adopt.html">Забрать питомца</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section" style="background: linear-gradient(rgba(76, 175, 80, 0.9), rgba(76, 175, 80, 0.8)), url('../images/promo-hero.jpg') center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-item">Наши акции</h1>
+                <p class="subtitle animate-item delay-1">Участвуйте и помогайте животным</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="promotions-list">
+    <div class="container">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <!-- Акция "Прогулка с другом" -->
+            <div class="card promotion-card animate-item" id="walk">
+                <div class="promotion-image">
+                    <img src="../images/walk-promo.jpg" alt="Прогулка с другом">
+                </div>
+                <div class="promotion-content">
+                    <div class="promotion-badge">Акция</div>
+                    <h3>Прогулка с другом</h3>
+                    <p>Возьмите собаку на прогулку и подарите ей радость общения!</p>
+                    <ul class="promo-benefits">
+                        <li>Помогает социализировать животных</li>
+                        <li>Дает возможность собаке получить новые впечатления</li>
+                        <li>Вы можете найти своего будущего питомца</li>
+                    </ul>
+                    <button class="btn small signup-btn">Участвовать</button>
+                </div>
+            </div>
+
+            <!-- Акция "Детские рисунки" -->
+            <div class="card promotion-card animate-item delay-1" id="drawings">
+                <div class="promotion-image">
+                    <img src="../images/drawings-promo.jpg" alt="Детские рисунки">
+                </div>
+                <div class="promotion-content">
+                    <div class="promotion-badge">Для детей</div>
+                    <h3>Стенка детских рисунков</h3>
+                    <p>Рисуйте животных и получайте подарки!</p>
+                    <ul class="promo-benefits">
+                        <li>Развивает творческие способности детей</li>
+                        <li>Учит доброте и заботе о животных</li>
+                        <li>Лучшие работы публикуются в наших соцсетях</li>
+                    </ul>
+                    <button class="btn small signup-btn">Участвовать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="promo-details">
+        <div class="container">
+            <div class="promo-steps-container animate-item">
+                <h2 class="section-title">Как участвовать в акциях</h2>
+                <p class="text-center" style="max-width: 700px; margin: 0 auto 30px;">Участие в наших акциях простое и доступное каждому. Выберите понравившуюся акцию и следуйте нескольким простым шагам:</p>
+                
+                <div class="promo-steps-grid">
+                    <div class="promo-step-card">
+                        <div class="step-number">1</div>
+                        <h3>Выберите акцию</h3>
+                        <p>Ознакомьтесь с условиями и выберите понравившуюся акцию, которая соответствует вашим возможностям и интересам.</p>
+                    </div>
+                    
+                    <div class="promo-step-card">
+                        <div class="step-number">2</div>
+                        <h3>Запишитесь</h3>
+                        <p>Нажмите кнопку "Участвовать" и заполните простую форму с вашими контактными данными.</p>
+                    </div>
+                    
+                    <div class="promo-step-card">
+                        <div class="step-number">3</div>
+                        <h3>Приходите</h3>
+                        <p>Посетите приют в назначенное время и участвуйте в акции. Мы будем рады видеть вас!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для записи -->
+    <div class="modal-overlay" id="promoModal" style="display: none;">
+        <div class="modal-card animate-item">
+            <button class="close-modal">×</button>
+            <h3 id="modalTitle">Запись на акцию</h3>
+            <form id="promoForm">
+                <div class="form-group">
+                    <label for="promoName">Ваше имя *</label>
+                    <input type="text" id="promoName" required>
+                </div>
+                <div class="form-group">
+                    <label for="promoPhone">Телефон *</label>
+                    <input type="tel" id="promoPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="promoEmail">Email</label>
+                    <input type="email" id="promoEmail">
+                </div>
+                <div class="form-group">
+                    <label for="promoDate">Предпочтительная дата</label>
+                    <input type="date" id="promoDate">
+                </div>
+                <div class="form-group">
+                    <label for="promoNotes">Дополнительная информация</label>
+                    <textarea id="promoNotes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Верные лапки</h3>
+                    <p>Приют для кошек и собак</p>
+                    <p>"От сердца к сердцу через верные лапки"</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>г. Красноярск, ул. Добрых Сердец, 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@vernye-lapki.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Часы работы</h3>
+                    <p>Пн-Пт: 10:00 - 19:00</p>
+                    <p>Сб-Вс: 10:00 - 17:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Приют "Верные лапки". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
